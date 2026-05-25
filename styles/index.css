@@ -77,7 +77,39 @@ body {
 #nav_menu .active {
   background: linear-gradient(90deg, #ff4b2b, #ff416c);
 }
+.dropdown {
+    position: relative;
+}
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #111;
+    min-width: 190px;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 14px 18px;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #ff3b4f;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 /* SlickNav Mobile Menu */
 .slicknav_menu {
   background-color: #111;

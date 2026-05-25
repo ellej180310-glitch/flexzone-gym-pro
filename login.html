@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Login | FlexZone Gym</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+        url("images/gym-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e91e63, #ff3b2f);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav {
+      background: #111111;
+      padding: 14px 8%;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 14px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff3b4f;
+    }
+
+    .login-page {
+      min-height: calc(100vh - 155px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+      padding: 70px 8%;
+    }
+
+    .login-info {
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .login-info h2 {
+      font-size: 50px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .login-info h2 span {
+      color: #ff3b4f;
+    }
+
+    .login-info p {
+      color: #e5e7eb;
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 25px;
+    }
+
+    .benefits {
+      display: grid;
+      gap: 14px;
+      margin-top: 25px;
+      max-width: 560px;
+    }
+
+    .benefit {
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 4px solid #ff3b4f;
+      padding: 15px 18px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .benefit strong {
+      color: #ffffff;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      padding: 38px;
+      border-radius: 24px;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+      animation: fadeUp 1s ease both;
+    }
+
+    .login-card h2 {
+      color: #111111;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .login-card p {
+      color: #4b5563;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #111827;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #ff3b4f;
+      box-shadow: 0 0 0 3px rgba(255, 59, 79, 0.18);
+    }
+
+    .login-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #374151;
+    }
+
+    .remember input {
+      width: auto;
+    }
+
+    .forgot {
+      color: #ff3b4f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e91e63, #ff3b2f);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(255, 59, 79, 0.35);
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 22px;
+      color: #4b5563;
+    }
+
+    .register-link a {
+      color: #ff3b4f;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 8%;
+      background: #111111;
+      color: #d1d5db;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .login-page {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+      }
+
+      .login-info h2 {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 7px 8px;
+        font-size: 14px;
+      }
+
+      .login-info h2 {
+        font-size: 34px;
+      }
+
+      .login-card {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="images/gymicon.gif" alt="FlexZone Gym Logo" class="logo">
+      <div>
+        <h1>FlexZone Gym</h1>
+        <p class="tagline">Where Strength Meets Purpose.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="membership.html">Membership</a>
+    <a href="login.html" class="active">Login</a>
+  </nav>
+
+  <main class="login-page">
+
+    <section class="login-info">
+      <h2>Welcome Back, <span>FlexZone Member</span></h2>
+
+      <p>
+        Log in to access your member portal, manage reservations, view membership information,
+        and stay connected with your fitness goals.
+      </p>
+
+      <div class="benefits">
+        <div class="benefit">
+          <strong>Manage Reservations:</strong> View or update your class bookings.
+        </div>
+
+        <div class="benefit">
+          <strong>Track Membership:</strong> Access your membership plan and account details.
+        </div>
+
+        <div class="benefit">
+          <strong>Stay Connected:</strong> Keep up with gym updates, programs, and fitness support.
+        </div>
+      </div>
+
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </section>
+
+    <section class="login-card">
+      <h2>Member Login</h2>
+      <p>Enter your account details to access your FlexZone member portal.</p>
+
+      <form action="member-dashboard.html" method="get">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="login-options">
+          <label class="remember">
+            <input type="checkbox" name="remember">
+            Remember me
+          </label>
+
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login to Member Portal</button>
+      </form>
+
+      <div class="register-link">
+        <p>Not a member yet? <a href="register.html">Create an account</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FlexZone Gym | Member Portal</p>
+  </footer>
+
+</body>
+</html>

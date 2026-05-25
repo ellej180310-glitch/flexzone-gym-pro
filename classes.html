@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexZone Gym | Classes</title>
+    <link rel="stylesheet" href="styles/classes.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <img src="images/gymicon.gif" alt="FlexZone Logo" class="logo">
+            <div>
+                <h1>FlexZone Gym</h1>
+                <p class="tagline">Where Strength Meets Purpose.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html" class="active">Classes</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="workout.html">Workouts</a></li>           
+           <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="membership.html">Membership</a></li>
+        </ul>
+    </nav>
+    <main class="class">
+        <section class="class-header">
+          <h2>Class Pricing and Descriptions</h2>
+          <p>Find the class that fits your goals and style!</p>
+        </section>
+    
+        <section class="class-grid">
+          <div class="class-card">
+            <a href="reservation.html"> <img src="images/classes/yoga.jpeg" alt="Yoga Class"></a>
+            <h3>Yoga</h3>
+            <p>A peaceful and restorative session focused on flexibility and inner strength.</p>
+            <span class="price">$15 / session</span>
+        </div>
+         
+          <div class="class-card">
+            <a href="reservation.html"> <img src="images/classes/weightloss.jpg" alt="Weight Loss Training"></a>
+            <h3>Weight Loss</h3>
+            <p>Burn calories and slim down with high-efficiency full-body exercises.</p>
+            <span class="price">$18 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/dance.jpeg" alt="Dance Fitness"></a>
+            <h3>Dance Fitness</h3>
+            <p>Fun, energetic routines that make fitness feel like a party.</p>
+            <span class="price">$17 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/aquafit.jpg" alt="Aqua Fitness"></a>
+            <h3>Aqua Fitness</h3>
+            <p>Low-impact water workouts to build endurance and tone muscles.</p>
+            <span class="price">$20 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/hiit.webp" alt="HIIT Class"></a>
+            <h3>HIIT</h3>
+            <p>High-Intensity Interval Training to push your limits and maximize results.</p>
+            <span class="price">$22 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/cardio.jpg" alt="Cardio Blast"></a>
+            <h3>Cardio Blast</h3>
+            <p>Heart-pumping sessions designed to improve stamina and burn fat.</p>
+            <span class="price">$16 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/abs.jpg" alt="Core & Abs"></a>
+            <h3>Core and Abs</h3>
+            <p>Strengthen your core and sculpt your abs with targeted training.</p>
+            <span class="price">$15 / session</span>
+          </div>
+    
+          <div class="class-card">
+            <a href="reservation.html"><img src="images/classes/getfit.jpeg" alt="Get Fit Program"></a>
+            <h3>Get Fit Program</h3>
+            <p>Our signature full-body transformation journey for all fitness levels.</p>
+            <span class="price">$25 / session</span>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 FlexZone Gym</p>
+        <p>Today's date: <span id="date"></span></p>
+        <button onclick="window.print()">🖨️ Print Page</button>
+        <script>
+            document.getElementById("date").textContent = new Date().toDateString();
+        </script>
+    </footer>
+</body>
+</html>

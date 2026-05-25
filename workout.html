@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexZone Gym | Workouts</title>
+  <link rel="stylesheet" href="styles/workout.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+  </script>
+</head>
+
+<body>
+  <header class="fade-in">
+    <div class="header-content">
+      <img src="images/gymicon.gif" alt="FlexZone Logo" class="logo">
+      <div>
+        <h1>FlexZone Gym</h1>
+        <p class="tagline">Where Strength Meets Purpose.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="workout.html" class="active">Workouts</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="membership.html">Membership</a></li>
+    </ul>
+  </nav>
+
+<main class="workout-main">
+
+  <section class="intro">
+    <h1>FlexZone Workouts</h1>
+    <p>Train Hard. Stay Strong. Achieve More.</p>
+  </section>
+
+  <section class="video-grid">
+    <div class="left-videos">
+      <video src="video-media/cardio.mp4" autoplay muted loop></video>
+      <video src="video-media/swimming.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="center-content">
+      <h2>Workout Programs</h2>
+      <div class="program-cards">
+        <div class="program-card">
+          <h3>Strength Training</h3>
+          <p>Build muscle and boost endurance with strength sessions.</p>
+        </div>
+        <div class="program-card">
+          <h3>Cardio Blast</h3>
+          <p>Increase stamina and burn calories with intense cardio workouts.</p>
+        </div>
+        <div class="program-card">
+          <h3>HIIT Workouts</h3>
+          <p>Quick and powerful gains with High-Intensity Interval Training.</p>
+        </div>
+        <div class="program-card">
+          <h3>Flexibility and Stretching</h3>
+          <p>Improve mobility and prevent injuries with focused stretching.</p>
+        </div>
+        <div class="program-card">
+          <h3>Bodyweight Conditioning</h3>
+          <p>No equipment? No problem! Train using your own body strength.</p>
+        </div>
+        <div class="program-card">
+          <h3>Core Focus</h3>
+          <p>Strengthen your abs and back for better posture and strength.</p>
+        </div>
+        <div class="program-card">
+          <h3>Endurance Training</h3>
+          <p>Push your limits with long-duration stamina training routines.</p>
+        </div>
+        <div class="program-card">
+          <h3>Bootcamp</h3>
+          <p>Join our energetic, team-based bootcamp sessions for a challenge!</p>
+        </div>
+        <div class="program-card">
+          <h3>Balance and Stability</h3>
+          <p>Enhance your overall coordination and prevent injuries effectively.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-videos">
+      <video src="video-media/fit.mp4" autoplay muted loop></video>
+      <video src="video-media/fitness_trampoline.mp4" autoplay muted loop></video>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-card">
+        <h3>What is the best routine for the gym?</h3>
+        <p>A mix of strength training, cardio, and flexibility is key. Focus on compound exercises and stay consistent!</p>
+      </div>
+      <div class="faq-card">
+        <h3>What should beginners do at the gym?</h3>
+        <p>Start with light weights, learn proper form, and don't rush. A trainer consultation can help!</p>
+      </div>
+      <div class="faq-card">
+        <h3>What are the 10 best exercises?</h3>
+        <p>Squats, Deadlifts, Push-ups, Pull-ups, Lunges, Planks, Shoulder Press, Rows, Dips, and Burpees.</p>
+      </div>
+      <div class="faq-card">
+        <h3>How do I schedule my workout at the gym?</h3>
+        <p>Plan 4-5 days/week. Alternate strength and cardio days. Stick to a consistent time if possible!</p>
+      </div>
+      <div class="faq-card">
+        <h3>Is it better to do a full-body workout every day?</h3>
+        <p>No, muscles need time to recover! Doing full-body daily can lead to overtraining and injury.</p>
+      </div>
+      <div class="faq-card">
+        <h3>What should I do on rest day?</h3>
+        <p>Active recovery! Light stretching, yoga, or a gentle walk helps muscle repair without strain.</p>
+      </div>
+      <div class="faq-card">
+        <h3>How long should I work out each day?</h3>
+        <p>30-60 minutes is ideal, depending on your goals and intensity.</p>
+      </div>
+      
+      <div class="faq-card">
+        <h3>What should I eat before a workout?</h3>
+        <p>A light meal with carbs and protein 1–2 hours before training fuels your session best!</p>
+      </div>
+      
+    </div>
+  
+    <h3 class="tips-heading">Workout Selection Tips:</h3>
+    <div class="tips-grid">
+      <div class="tip-card">Focus on compound lifts (squats, deadlifts, etc.).</div>
+      <div class="tip-card">Incorporate cardio 2-3 times a week.</div>
+      <div class="tip-card">Balance pushing and pulling exercises.</div>
+      <div class="tip-card">Don't skip flexibility/mobility work.</div>
+      <div class="tip-card">Train what you enjoy to stay consistent!</div>
+    </div>
+  </section>
+  
+  <section class="testimonials">
+    <h2>What Members Are Saying</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"FlexZone gave me the motivation I needed! Their strength program is the real deal."</p>
+        <cite>- Jordan T.</cite>
+      </div>
+      <div class="testimonial-card">
+        <p>"I've lost 15 pounds in 2 months doing the cardio and HIIT workouts!"</p>
+        <cite>- Selena R.</cite>
+      </div>
+      <div class="testimonial-card">
+        <p>"The trainers are top-notch. I finally feel confident lifting weights."</p>
+        <cite>- Marcus B.</cite>
+      </div>
+      <div class="testimonial-card">
+        <p>"The flexibility programs helped me fix my back pain. Amazing gym!"</p>
+        <cite>- Priya K.</cite>
+      </div>
+    </div>
+  
+    <div class="gym-rating">
+      <h3>⭐ Rated 4.8/5 by 500+ Happy Members!</h3>
+      <div class="stars">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+  </section>  
+
+</main>
+
+<footer>
+  <p>&copy; 2025 FlexZone Gym</p>
+  <p>Today's date: <span id="date"></span></p>
+  <button onclick="window.print()">🖨️ Print Page</button>
+  <script>
+      document.getElementById("date").textContent = new Date().toDateString();
+  </script>
+</footer>
+
+</body>
+</html>

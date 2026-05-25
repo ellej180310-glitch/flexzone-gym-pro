@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexZone Gym | Contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <img src="images/gymicon.gif" alt="FlexZone Logo" class="logo">
+            <div>
+                <h1>FlexZone Gym</h1>
+                <p class="tagline">Where Strength Meets Purpose.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="nutrition.html" >Nutrition</a></li>
+            <li><a href="workout.html">Workouts</a></li>           
+            <li><a href="reservation.html" >Reservation</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="membership.html">Membership</a></li>
+
+        </ul>
+    </nav>
+    <main>
+    
+      <section class="contact-header">
+        
+        <h1>Contact FlexZone Gym</h1>
+        <p>Have a question or want to schedule a tour? We're here to help you reach your goals!</p>
+      </section>
+      
+      <section class="contact-content">
+        <div class="contact-form">
+          <form action="receive.html" method="GET">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <textarea name="message" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        
+      
+        <div class="contact-info">
+          <h2>Visit Us</h2>
+          <p><strong>Address:</strong> 123 Flex Street, Boston, MA 02118</p>
+          <p><strong>Email:</strong> info@flexzonegym.com</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+      
+          <h2>Hours</h2>
+          <p>Monday - Friday: 6:00 AM - 10:00 PM</p>
+          <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+      
+          <div class="social-links">
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">TikTok</a>
+          </div>
+      
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.437218123916!2d-71.0656340845461!3d42.34730477918644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708c59f2d15f%3A0x8d6aa3cd5a7c16b1!2sBoston%2C%20MA%2002118!5e0!3m2!1sen!2sus!4v1616441847489!5m2!1sen!2sus" 
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      
+      <section class="faq">
+        <h2>Quick FAQ</h2>
+        <details>
+          <summary>What are your business hours?</summary>
+          <p>We are open Monday to Saturday, 6 AM to 10 PM. Sundays 8 AM to 6 PM.</p>
+        </details>
+        <details>
+          <summary>Can I book a tour?</summary>
+          <p>Yes! Fill out the contact form or call us to schedule a free tour.</p>
+        </details>
+        <details>
+          <summary>How fast will someone respond?</summary>
+          <p>We usually respond within 24 hours, Monday through Friday.</p>
+        </details>
+        <details>
+          <summary>Do you offer personal training?</summary>
+          <p>Absolutely! We have certified personal trainers ready to help you meet your goals.</p>
+        </details>
+        <details>
+          <summary>Is there parking available?</summary>
+          <p>Yes, we offer free parking for all gym members!</p>
+        </details>
+      </section>
+      
+      <aside class="why-choose-us">
+        <h2>Why FlexZone Gym Stands Out</h2>
+        <ul>
+          <li><strong>Elite Equipment:</strong> Train with the latest, pro-grade machines and free weights designed for serious results.</li>
+          <li><strong>Top-Tier Coaches:</strong> Our certified trainers customize plans that match your unique goals whether you're building strength, cutting fat, or boosting endurance.</li>
+          <li><strong>Nutrition and Recovery Focus:</strong> Beyond workouts, we guide your eating habits, hydration, and recovery to maximize gains.</li>
+          <li><strong>Empowering Atmosphere:</strong> Our community pushes you to be your best supportive, energetic, and 100% judgment-free.</li>
+          <li><strong>Member Perks:</strong> Free parking, exclusive workshops, fitness challenges, and discounts at our FlexFuel Bar!</li>
+        </ul>
+      </aside>
+      
+      
+    </main>
+    <footer>
+      <p>&copy; 2025 FlexZone Gym</p>
+      <p>Today's date: <span id="date"></span></p>
+      <button onclick="window.print()">🖨️ Print Page</button>
+      <script>
+          document.getElementById("date").textContent = new Date().toDateString();
+      </script>
+  </footer>
+</body>
+</html>

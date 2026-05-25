@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexZone Gym | Memberships</title>
+  <link rel="stylesheet" href="styles/membership.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+  </script>
+</head>
+
+<body>
+  <header class="fade-in">
+    <div class="header-content">
+      <img src="images/gymicon.gif" alt="FlexZone Logo" class="logo">
+      <div>
+        <h1>FlexZone Gym</h1>
+        <p class="tagline">Where Strength Meets Purpose.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="workout.html" >Workouts</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="membership.html" class="active">Membership</a></li>
+    </ul>
+  </nav>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+          <h1>FlexZone Memberships</h1>
+          <p>Find the Perfect Plan for Your Fitness Journey</p>
+          <a href="#plans" class="btn">View Plans</a>
+        </div>
+      </section>
+    
+      <section id="plans" class="membership-plans">
+        <h2>Choose Your Membership Plan</h2>
+      
+        <div class="plans-container">
+          <div class="plan-card">
+            <h3>Basic Membership</h3>
+            <p class="price">$29.99 / month</p>
+            <ul>
+              <li>24/7 Gym Access</li>
+              <li>Locker Rooms</li>
+              <li>Free Consultation</li>
+            </ul>
+            <a href="reservation.html" class="btn">Join Now</a>
+          </div>
+      
+          <div class="plan-card highlight">
+            <h3>Plus Membership</h3>
+            <p class="price">$49.99 / month</p>
+            <ul>
+              <li>Gym + Group Classes</li>
+              <li>Nutrition Guidance</li>
+              <li>Priority Scheduling</li>
+            </ul>
+            <a href="reservation.html" class="btn">Join Now</a>
+          </div>
+      
+          <div class="plan-card">
+            <h3>Elite Membership</h3>
+            <p class="price">$69.99 / month</p>
+            <ul>
+              <li>Gym + Classes</li>
+              <li>1 Personal Training Session/Week</li>
+              <li>Exclusive FlexZone Gear</li>
+            </ul>
+            <a href="reservation.html" class="btn">Join Now</a>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="benefits">
+        <h2>Membership Benefits</h2>
+      
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <img src="images/membership/24-7.png" alt="24/7 Access">
+            <p>24/7 Access</p>
+          </div>
+          <div class="benefit-item">
+            <img src="images/membership/personal_trainer.jpeg" alt="Personal Training">
+            <p>Personal Training</p>
+          </div>
+          <div class="benefit-item">
+            <img src="images/membership/nutrition_guidance.jpg" alt="Nutrition Guidance">
+            <p>Nutrition Guidance</p>
+          </div>
+          <div class="benefit-item">
+            <img src="images/membership/locker.jpeg" alt="Locker Rooms">
+            <p>Locker Rooms</p>
+          </div>
+          <div class="benefit-item">
+            <img src="images/membership/schedule.jpeg" alt="Flexible Scheduling">
+            <p>Flexible Scheduling</p>
+          </div>
+          <div class="benefit-item">
+            <img src="images/membership/consultation.png" alt="Free Consultation">
+            <p>Free First Consultation</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="how-it-works">
+        <h2>How It Works</h2>
+      
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <h3>Choose Your Plan</h3>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <h3>Book a Free Tour</h3>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <h3>Start Training!</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+      
+        <details>
+          <summary>Which plan is right for me?</summary>
+          <p>It depends on your fitness goals! Basic is for gym access, Plus adds classes, and Elite includes personal training.</p>
+        </details>
+      
+        <details>
+          <summary>Can I upgrade anytime?</summary>
+          <p>Yes! You can upgrade or downgrade anytime by contacting the front desk.</p>
+        </details>
+      
+        <details>
+          <summary>Is there a trial?</summary>
+          <p>We offer a Free First Class or Tour to try before you commit!</p>
+        </details>
+      
+        <details>
+          <summary>How do I cancel?</summary>
+          <p>You can cancel anytime with a 30-day notice period via your online portal or at the gym.</p>
+        </details>
+      
+        <details>
+          <summary>Do you offer family discounts?</summary>
+          <p>Yes, we offer family bundles! Ask our staff for details when signing up.</p>
+        </details>
+      
+        <details>
+          <summary>Are there hidden fees?</summary>
+          <p>No hidden fees. Everything is clearly outlined in your membership agreement.</p>
+        </details>
+      
+        <details>
+          <summary>Can I pause my membership?</summary>
+          <p>Yes, you can pause your membership if needed, for up to 3 months at a time.</p>
+        </details>
+      
+        <details>
+          <summary>What is included in a free consultation?</summary>
+          <p>A fitness assessment with a personal trainer to evaluate your starting point and goals!</p>
+        </details>
+      </section>
+      
+
+      <section class="cta">
+        <h2>Your Best Self Starts Here. Join FlexZone Today!</h2>
+        <a href="reservation.html" class="btn">Get Started</a>
+      </section>
+</main>
+  <footer>
+    <p>&copy; 2025 FlexZone Gym</p>
+    <p>Today's date: <span id="date"></span></p>
+    <button onclick="window.print()">🖨️ Print Page</button>
+    <script>
+        document.getElementById("date").textContent = new Date().toDateString();
+    </script>
+  </footer>
+</body>
+</html>

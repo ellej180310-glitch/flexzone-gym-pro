@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexZone Gym | Contact</title>
+    <link rel="stylesheet" href="styles/contact_nut.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <img src="images/gymicon.gif" alt="FlexZone Logo" class="logo">
+            <div>
+                <h1>FlexZone Gym</h1>
+                <p class="tagline">Where Strength Meets Purpose.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="nutrition.html" class="active">Nutrition</a></li>
+            <li><a href="workout.html">Workouts</a></li>           
+            <li><a href="reservation.html" >Reservation</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="membership.html">Membership</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section class="contact-container">
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-description">Have questions? We're here to help you reach your fitness goals! Fill out the form below and we'll get back to you shortly.</p>
+    
+      <form class="contact-form" action="contact_confirm.html" method="get">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+  
+      <section class="contact-info">
+        <h2>Our Location</h2>
+        <p>FlexZone Gym</p>
+        <p>123 Flex Street, Boston, MA 02118</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> contactNut@flexzonegym.com</p>
+  
+        <div class="map">
+     
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.437218123916!2d-71.0656340845461!3d42.34730477918644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708c59f2d15f%3A0x8d6aa3cd5a7c16b1!2sBoston%2C%20MA%2002118!5e0!3m2!1sen!2sus!4v1616441847489!5m2!1sen!2sus" 
+          width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+         </iframe>
+        </div>
+  
+        <div class="social-media">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+        </div>
+      </section>
+  
+      <section class="faq">
+        <h2>Quick FAQ</h2>
+        <details>
+          <summary>What are your business hours?</summary>
+          <p>We are open Monday to Saturday, 6 AM to 10 PM. Sundays 8 AM to 6 PM.</p>
+        </details>
+        <details>
+          <summary>Can I book a tour?</summary>
+          <p>Yes! Fill out the contact form or call us to schedule a free tour.</p>
+        </details>
+        <details>
+          <summary>How fast will someone respond?</summary>
+          <p>We usually respond within 24 hours, Monday through Friday.</p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 FlexZone Gym</p>
+      <p>Today's date: <span id="date"></span></p>
+      <button onclick="window.print()">🖨️ Print Page</button>
+      <script>
+          document.getElementById("date").textContent = new Date().toDateString();
+      </script>
+  </footer>
+</body>
+</html>

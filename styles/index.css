@@ -140,40 +140,46 @@ body {
   position: relative;
 }
 
+.member-dropdown > a {
+  display: block;
+}
+
 .member-menu {
-  display: none;
+  display: none !important;
   position: absolute;
   top: 100%;
   left: 0;
   background: #111;
-  min-width: 210px;
+  min-width: 220px;
   list-style: none;
   padding: 0;
   margin: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 14px 14px;
   z-index: 9999;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
 
 .member-menu li {
   display: block;
 }
 
-.member-menu a {
+.member-menu li a {
   display: block;
-  padding: 14px 18px;
+  padding: 15px 20px;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  text-align: left;
 }
 
-.member-menu a:hover {
+.member-menu li a:hover {
   background: #ff3b4f;
 }
 
 .member-dropdown:hover .member-menu {
-  display: block;
+  display: block !important;
 }
+
 
 .img {
   flex: 1 1 500px;

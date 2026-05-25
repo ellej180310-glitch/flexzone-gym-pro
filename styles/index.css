@@ -136,6 +136,44 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   border-radius: 10px;
 }
+.member-dropdown {
+  position: relative;
+}
+
+.member-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  min-width: 210px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+  z-index: 9999;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.member-menu li {
+  display: block;
+}
+
+.member-menu a {
+  display: block;
+  padding: 14px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-menu a:hover {
+  background: #ff3b4f;
+}
+
+.member-dropdown:hover .member-menu {
+  display: block;
+}
 
 .img {
   flex: 1 1 500px;
